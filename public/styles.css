@@ -115,25 +115,81 @@ html, body {
 .projects {
 	height: calc(100% - 81px);
 	z-index: 2;
-	background-color: #FFF;
 	width: 100%;
 	position: relative;
-	border-top: 1px solid #EEE;
+	background-color: #71deff;
+}
+
+.projectsHead {
+	-webkit-box-shadow: 0px 0px 87px -16px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 87px -16px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 87px -16px rgba(0,0,0,0.75);
+}
+
+.project-container {
+	height: calc(100% - 81px);
+	background: url('images/clouds.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 1s ease-in-out;
+	will-change: -webkit-filter;
+	-webkit-filter: blur(0px);
+}
+
+.blur {
+	-webkit-filter: blur(10px);
 }
 
 .bitcurve-project {
-	height: 300px;
-	display: inline-block;
-	transition: 0.1s ease-in-out;
-	will-change: opacity, height;
-	opacity: 1;
+	margin-top: 5vh;
+	height: 50vh;
 }
 
-.bitcurve-project:hover {
-	transition: 0.2s ease-in-out;
-	will-change: opacity, height;
-	opacity: 0.9;
-	height: 310px;
+.delay {
+	display: none;
+}
+
+.explain {
+	transition: 1s ease-in-out;
+	position: absolute;
+	bottom: 10%;
+}
+
+.d3 {
+	left: 70%;
+}
+
+.bitcoin {
+	left: 10%;
+}
+
+.plus {
+	font-family: 'Manteka';
+	font-size: 250px;
+	display: none;
+	left: 44.6%;
+}
+
+.smallimg {
+	height: 300px;
+	transition: 0.2s;
+	will-change: height; 
+}
+
+.bitcurve-title {
+	-webkit-filter: blur(0);
+	transition: 1s ease-in-out;
+	will-change: bottom;
+	position: relative;
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Manteka';
+	color: #FFF;
+	top: 30%;
+}
+
+.bitcurve-title-moved {
+	top: 10% !important;
 }
 
 .project {
@@ -146,7 +202,6 @@ html, body {
 	padding-bottom: 30px;
 	color: #FFF;
 	background-color: #3E3E3E;
-	margin-bottom: 30px;
 	font-family: 'Manteka';
 	text-align: center;
 	font-size: 36px;
