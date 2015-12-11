@@ -18,12 +18,12 @@ $(document).ready(function(){
 		clearTimeout(timey);
 		$('.explain').addClass('delay');
 	}
-	$('.project-container').mouseenter(function(){
+	$('.project-container, .bitcurve-title').mouseenter(function(){
 		$('.project-container').removeClass('blur')
 		$('.bitcurve-title').addClass('bitcurve-title-moved')
 		timer();
 	})
-	$('.project-container').mouseleave(function(){
+	$('.project-container, .bitcurve-title').mouseleave(function(){
 		$('.project-container').addClass('blur')
 		$('.bitcurve-title').removeClass('bitcurve-title-moved')
 		stopTimey();

@@ -11,12 +11,12 @@ html, body {
 
 @font-face {
 	font-family: 'Circular';
-	src: url('/fonts/circularBold.otf') format('opentype');
+	src: url('./fonts/circularBold.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'Manteka';
-	src: url('/fonts/Manteka.ttf') format('truetype');
+	src: url('./fonts/Manteka.ttf') format('truetype');
 }
 
 
@@ -113,11 +113,11 @@ html, body {
 }
 
 .projects {
-	height: calc(100% - 81px);
+	height: calc(80% - 70px);
 	z-index: 2;
 	width: 100%;
 	position: relative;
-	background-color: #71deff;
+	background-color: #7DD3F4;
 }
 
 .projectsHead {
@@ -152,7 +152,7 @@ html, body {
 .explain {
 	transition: 1s ease-in-out;
 	position: absolute;
-	bottom: 10%;
+	bottom: 0;
 }
 
 .d3 {
@@ -177,15 +177,17 @@ html, body {
 }
 
 .bitcurve-title {
+	z-index: 100;
 	-webkit-filter: blur(0);
 	transition: 1s ease-in-out;
-	will-change: bottom;
+	will-change: top;
 	position: relative;
 	text-align: center;
 	font-size: 100px;
 	font-family: 'Manteka';
 	color: #FFF;
-	top: 30%;
+	top: 35%;
+	text-shadow: 0px 3px 3px rgba(33, 33, 33, 0.8)
 }
 
 .bitcurve-title-moved {
